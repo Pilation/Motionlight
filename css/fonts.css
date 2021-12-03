@@ -1,15 +1,27 @@
 @font-face {
-    font-family: 'Pangram', sans-serif;
+    font-family: "Pangram", sans-serif;
     src: url("../fonts/pangram/Pangram-Regular.ttf");
     font-weight: 400;
     font-style: normal;
 }
 
-
 @font-face {
-    font-family: 'Pangram', sans-serif;
+    font-family: "Pangram", sans-serif;
     src: url("../fonts/pangram/Pangram-Bold.ttf");
     font-weight: 700;
     font-style: normal;
 }
 
+@font-face {
+    font-family: "Montserrat", sans-serif;
+    src: url("../fonts/Montserrat-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat", sans-serif;
+    src: url("../fonts/Montserrat-Black.ttf");
+    font-weight: 700;
+    font-style: normal;
+}
