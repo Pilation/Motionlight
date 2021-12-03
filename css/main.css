@@ -257,21 +257,45 @@ section#about_section {
 }
 
 .about .container {
-  max-width: 924px;
+  max-width: 1240px;
+}
+
+#about_section .flex {
+  gap: 34px;
 }
 
 .about .about-item {
-  width: 40%;
+  background: linear-gradient(204.78deg, rgba(159, 238, 255, 0.1) 14.04%, rgba(255, 149, 213, 0.1) 101.74%);
+  padding: 17px;
+  border-radius: 10px;
+  width: 48%;
   text-align: center;
   align-self: stretch;
   padding-bottom: 128px;
   position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  /* gap: 20px; */
+}
+.about .about-item div {
+  flex-shrink: 0;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .about .about-item img {
   display: block;
-  margin: 0 auto 23px;
+  /* margin: 0 auto 23px; */
   max-width: 100%;
+  /* max-width: 50%; */
+  /* max-height: 50%; */
+  max-height: 100%;
+  width: auto;
+  height: auto;
 }
 
 .about .about-item span.title {
@@ -283,29 +307,30 @@ section#about_section {
   color: var(--main-white-color);
   display: block;
   padding-bottom: 20px;
+  text-align: left;
 }
 .about .about-item p {
-  background: linear-gradient(204.78deg, rgba(159, 238, 255, 0.1) 14.04%, rgba(255, 149, 213, 0.1) 101.74%);
-  padding: 10px;
-  border-radius: 10px;
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
-  text-align: center;
+  text-align: left;
+  /* text-align: center; */
   color: var(--main-white-color);
   padding-bottom: 20px;
 }
 
 .about .about-item .all_btn-w {
+  width: 100%;
+  display: block;
   border: 1px solid var(--main-white-color);
   font-size: 12px;
   line-height: 15px;
   padding: 15px 9px;
-  margin: 0 auto;
-  position: absolute;
-  bottom: 61px;
-  left: 50%;
-  transform: translateX(-50%);
+  /* margin: 0 auto; */
+  /* position: absolute; */
+  /* bottom: 61px; */
+  /* left: 50%; */
+  /* transform: translateX(-50%); */
 }
 
 .advantages {
