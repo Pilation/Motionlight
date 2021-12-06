@@ -101,7 +101,7 @@ html {
   padding: 16px 42px;
   background: transparent;
   display: block;
-  width: max-content;
+  width: 100%;
 }
 
 .all_btn-b:hover {
@@ -137,6 +137,10 @@ header {
   z-index: 100;
 }
 
+header .container {
+  max-width: 1150px;
+}
+
 .logo a {
   display: block;
   font-size: 0;
@@ -149,8 +153,8 @@ header {
 
 .right_side nav a {
   font-weight: normal;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 12px;
+  line-height: 17px;
 }
 
 .right_side nav ul li {
@@ -247,13 +251,14 @@ span.langs-list-item-one i.fa {
 }
 
 section#about_section {
-  padding: 152px 0 9px;
+  padding: 59px 0 95px;
   background: linear-gradient(180deg, #000000 0%, #2d2d2d 100%);
   margin-top: -4px;
 }
 
 .about span.h2 {
-  display: none;
+  color: #fff;
+  padding-bottom: 59px;
 }
 
 .about .container {
@@ -261,39 +266,37 @@ section#about_section {
 }
 
 #about_section .flex {
-  gap: 34px;
+  gap: 18px;
+  justify-content: center;
 }
 
 .about .about-item {
   background: linear-gradient(204.78deg, rgba(159, 238, 255, 0.1) 14.04%, rgba(255, 149, 213, 0.1) 101.74%);
-  padding: 17px;
+  padding: 35px 27px;
   border-radius: 10px;
-  width: 48%;
-  text-align: center;
+  flex: 1 1 45%;
+  text-align: left;
   align-self: stretch;
-  padding-bottom: 128px;
-  position: relative;
+  min-width: 313px;
+
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  /* gap: 20px; */
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 .about .about-item div {
-  flex-shrink: 0;
-  width: 50%;
+  flex: 1 1 50%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
 }
 
 .about .about-item img {
+  flex: 1 1 30%;
+  align-self: flex-start;
   display: block;
-  /* margin: 0 auto 23px; */
-  max-width: 100%;
-  /* max-width: 50%; */
-  /* max-height: 50%; */
-  max-height: 100%;
+  min-width: 192px;
+  max-width: 240px;
   width: auto;
   height: auto;
 }
@@ -302,35 +305,27 @@ section#about_section {
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
-  text-align: center;
   text-transform: uppercase;
   color: var(--main-white-color);
   display: block;
   padding-bottom: 20px;
-  text-align: left;
 }
 .about .about-item p {
   font-weight: normal;
-  font-size: 12px;
-  line-height: 15px;
-  text-align: left;
-  /* text-align: center; */
+  font-size: 14px;
+  line-height: 20px;
   color: var(--main-white-color);
   padding-bottom: 20px;
 }
 
 .about .about-item .all_btn-w {
+  margin-top: auto;
   width: 100%;
   display: block;
   border: 1px solid var(--main-white-color);
   font-size: 12px;
   line-height: 15px;
   padding: 15px 9px;
-  /* margin: 0 auto; */
-  /* position: absolute; */
-  /* bottom: 61px; */
-  /* left: 50%; */
-  /* transform: translateX(-50%); */
 }
 
 .advantages {
@@ -412,7 +407,8 @@ span.h2 {
   color: #000000;
 }
 
-.contact-form_block input::placeholder {
+.contact-form_block input::placeholder,
+.contact-form_block textarea::placeholder {
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
@@ -449,6 +445,10 @@ footer {
   padding: 17px 0 27px;
 }
 
+footer .container {
+  max-width: 1000px;
+}
+
 footer .flex {
   align-items: flex-start;
 }
@@ -456,43 +456,33 @@ footer .flex {
 .logo_footer {
   text-align: left;
 }
+.logo_footer a {
+  display: block;
+  width: fit-content;
+  height: fit-content;
+}
 
 footer .left_side p {
   color: var(--main-white-color);
   font-weight: normal;
-  font-size: 10px;
-  line-height: 12px;
+  font-size: 14px;
+  line-height: 17px;
   padding-top: 24px;
-  max-width: 209px;
+  max-width: 160px;
   text-align: left;
-
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 10px;
 }
-footer .left_side p span img {
-  position: relative;
-  width: 20px;
-  height: 20px;
-}
-footer .left_side p span {
-  flex-shrink: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 26px;
-  height: 26px;
-  border-radius: 50%;
-  background-color: #fff;
-  opacity: 0.6;
-}
-
-footer .left_side p span::after {
+footer .left_side p.small {
+  font-size: 10px;
+  line-height: 12px;
 }
 
 footer .flex .tab_hide ul li {
   padding-right: 21px;
+  /* height: fit-content; */
 }
 
 footer .flex .tab_hide ul li:last-child {
@@ -502,7 +492,8 @@ footer .flex .tab_hide ul li:last-child {
 footer .flex .tab_hide ul li a {
   font-weight: normal;
   font-size: 14px;
-  line-height: 26px;
+  line-height: 17px;
+  /* line-height: 26px; */
 }
 
 .social_list img:hover {

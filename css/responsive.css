@@ -12,7 +12,7 @@
 
 @media only screen and (max-width: 992px) {
     .container {
-        padding: 0 30px;
+        padding: 0 36px;
     }
 
     .tab_hide {
@@ -23,7 +23,7 @@
         flex-wrap: wrap;
         position: fixed;
         right: -211px;
-        top: 61px;
+        top: 57px;
         width: 211px;
         background: #000;
         padding-bottom: 23px;
@@ -79,7 +79,7 @@
         padding: 21px 0;
     }
     #video {
-        padding-top: 61px;
+        padding-top: 57px;
     }
 
     header .right_side nav {
@@ -194,12 +194,18 @@
 
     .about .about-item {
         width: 100%;
-        padding-bottom: 59px;
+        background: none;
+        padding: 0 0;
+        align-self: stretch;
     }
 
     section#about_section {
         padding-top: 26px;
         padding-bottom: 0;
+    }
+
+    section#about_section .flex {
+        gap: 60px;
     }
 
     .about .about-item .all_btn-w {
