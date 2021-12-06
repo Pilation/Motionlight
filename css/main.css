@@ -153,7 +153,7 @@ header .container {
 
 .right_side nav a {
   font-weight: normal;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 17px;
 }
 
@@ -164,7 +164,9 @@ header .container {
 .right_side nav ul li:last-child {
   margin-right: 0;
 }
-
+.social_list {
+  flex-shrink: 0;
+}
 .social_list ul li {
   margin-right: 7px;
 }
@@ -336,6 +338,20 @@ section#about_section {
   max-width: 735px;
 }
 
+.advantages-item {
+  flex: 1 1 40%;
+  min-width: 250px;
+  align-self: stretch;
+  padding-top: 68px;
+}
+.advantages-item p {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #000000;
+}
+
 span.h2 {
   padding-bottom: 15px;
   font-weight: bold;
@@ -364,19 +380,6 @@ span.h2 {
 
 .advantages-item-icon img {
   max-width: 100%;
-}
-
-.advantages-item {
-  width: 40%;
-  align-self: stretch;
-  padding-top: 68px;
-}
-.advantages-item p {
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 29px;
-  text-align: center;
-  color: #000000;
 }
 
 .contact-form_block {
@@ -479,6 +482,10 @@ footer .left_side p {
   align-items: center;
   gap: 10px;
 }
+footer .left_side p:nth-child(4) {
+  padding-top: 0;
+}
+
 footer .left_side p.small {
   font-size: 10px;
   line-height: 12px;
