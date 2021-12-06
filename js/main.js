@@ -3,6 +3,10 @@ $('.mob_btn').on('click', function () {
     $(this).toggleClass('active');
 });
 
+$('.nav-link').on('click', function () {
+    $(`div.right_side`).removeClass('active');
+});
+
 jQuery(function ($) {
     $(document).mouseup(function (e) {
         var headerBlock = $("header");

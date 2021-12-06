@@ -164,11 +164,50 @@ header .container {
 .right_side nav ul li:last-child {
   margin-right: 0;
 }
+
 .social_list {
   flex-shrink: 0;
 }
+.social_list ul {
+  display: flex;
+  flex-direction: row;
+  gap: 7px;
+}
 .social_list ul li {
-  margin-right: 7px;
+  position: relative;
+}
+
+.social_list ul li a {
+  display: block;
+  height: 26px;
+  width: 26px;
+  display: flex;
+}
+
+.social_list .behance img {
+  width: 18px;
+  height: 18px;
+  position: relative;
+  align-self: center;
+  margin: 0 auto;
+}
+.social_list .behance {
+  width: 26px;
+  height: 26px;
+}
+
+.social_list .behance::before {
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: "";
+  width: 26px;
+  height: 26px;
+  background-color: #fff;
+  opacity: 0.5;
+  border-radius: 50%;
 }
 
 .social_list ul li:last-child {
