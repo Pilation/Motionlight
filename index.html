@@ -19,7 +19,7 @@
 			<div class="flex">
 				<div class="logo">
 					<a href="#video" target="_blank">
-						<img src="./img/logo.png" alt="Logo">
+						<img src="./img/logo.svg" alt="Logo">
 					</a>
 				</div>
 				<div class="right_side">
@@ -229,12 +229,14 @@
 			<div class="container">
 				<div class="contact-form_block">
 					<span class="h2">Контакты</span>
-					<form>
-						<input type="text" placeholder="Ваше имя">
-						<input type="email" placeholder="Email ">
-						<input type="tel" placeholder="Телефон ">
-						<textarea placeholder="Опишите вашу цель и мы найдем оптимальное решение"></textarea>
-						<button class="all_btn-b">
+					<form method="post" action="send.php">
+						<input type="text" name="name" placeholder="Ваше имя" required>
+						<input type="email" name="email" placeholder="Email "
+							pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+						<input type="tel" name="tel" placeholder="Телефон " pattern="[0-9]{10}" required>
+						<textarea name="subject"
+							placeholder="Опишите вашу цель и мы найдем оптимальное решение"></textarea>
+						<button class="all_btn-b" type="send">
 							сделать запрос
 						</button>
 					</form>
@@ -249,19 +251,10 @@
 				<div class="left_side">
 					<div class="logo_footer">
 						<a href="javascript:void(0);" target="_blank">
-							<img src="./img/logo.png" alt="Logo">
+							<img src="./img/logo.svg" alt="Logo">
 						</a>
 					</div>
-					<p>
-						Kyrylo-Mefodiivska St, 2, Kyiv, 02000 оф 394
-					</p>
-					<p>
-						<a href="tel:+380730192021">+38
-							073-0192021</a>
-					</p>
-					<p>
-						<a href="tel:+380970192021">+38 097-0192021</a>
-					</p>
+					<p>&copy; Copyright 2021</p>
 					<p class="small">
 						С MotionLight
 					</p>
