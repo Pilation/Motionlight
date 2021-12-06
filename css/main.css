@@ -534,11 +534,6 @@ footer .left_side p:nth-child(4) {
   padding-top: 0;
 }
 
-footer .left_side p.small {
-  font-size: 10px;
-  line-height: 12px;
-}
-
 footer .flex .tab_hide ul li {
   padding-right: 21px;
   /* height: fit-content; */
