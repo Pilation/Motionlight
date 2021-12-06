@@ -390,6 +390,16 @@ span.h2 {
   max-width: 781px;
 }
 
+.contact {
+  padding-bottom: 51px;
+}
+
+.contact-form_block form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 .contact-form_block span.h2 {
   padding-bottom: 51px;
 }
@@ -405,6 +415,10 @@ span.h2 {
   font-size: 14px;
   line-height: 17px;
   color: #000000;
+}
+
+.contact-form_block input:first-child {
+  flex: 1 1 100%;
 }
 
 .contact-form_block input::placeholder,
@@ -428,16 +442,6 @@ span.h2 {
   color: #000000;
   height: 192px;
   margin-bottom: 28px;
-}
-
-.contact-form_block form {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.contact {
-  padding-bottom: 51px;
 }
 
 footer {
