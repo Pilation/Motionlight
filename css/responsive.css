@@ -26,7 +26,7 @@
         flex-wrap: wrap;
         position: fixed;
         right: -211px;
-        top: 57px;
+        top: 55px;
         width: 211px;
         background: #000;
         padding-bottom: 23px;
@@ -82,7 +82,7 @@
         padding: 21px 0;
     }
     #video {
-        padding-top: 57px;
+        padding-top: 55px;
     }
 
     header .right_side nav {
