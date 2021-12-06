@@ -5,6 +5,8 @@ $('.mob_btn').on('click', function () {
 
 $('.nav-link').on('click', function () {
     $(`div.right_side`).removeClass('active');
+    $(`.mob_btn`).removeClass('active');
+
 });
 
 jQuery(function ($) {
