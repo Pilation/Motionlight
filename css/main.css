@@ -265,8 +265,7 @@ span.langs-list-item-one i.fa {
   padding-top: 70px;
 }
 
-.video-block video,
-.video-block img {
+.video-block video {
   width: 100%;
   max-width: 1920px;
   height: 100vh;
@@ -291,9 +290,11 @@ span.langs-list-item-one i.fa {
   line-height: 61px;
   text-align: center;
   text-transform: uppercase;
+  text-shadow: 0px 4px 20px #000000cc;
 }
 
 .video-block .all_btn-w {
+  background-color: #0000008f;
   position: absolute;
   bottom: 25%;
   left: 50%;
