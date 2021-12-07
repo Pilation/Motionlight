@@ -137,6 +137,10 @@ header {
   z-index: 100;
 }
 
+header .flex {
+  gap: 21px;
+}
+
 header .container {
   max-width: 1150px;
 }
@@ -253,11 +257,16 @@ span.langs-list-item-one i.fa {
   padding-right: 23px;
 }
 
+.hdn-i {
+  display: none;
+}
+
 #video {
   padding-top: 70px;
 }
 
-.video-block video {
+.video-block video,
+.video-block img {
   width: 100%;
   max-width: 1920px;
   height: 100vh;

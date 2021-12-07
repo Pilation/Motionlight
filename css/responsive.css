@@ -4,13 +4,13 @@
     }
 }
 
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 1070px) {
     .user {
-        padding-left: 2em;
+        padding-left: 21px;
     }
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1024px) {
     .container {
         padding: 0 36px;
     }
@@ -157,6 +157,13 @@
 }
 
 @media only screen and (max-width: 567px) {
+    .hdn-i {
+        display: block;
+    }
+    .hdn-v {
+        display: none;
+    }
+
     #hidden {
         display: none;
     }
