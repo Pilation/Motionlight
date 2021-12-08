@@ -14,7 +14,7 @@
 					
 
 					if(mail($to, $header, $message)){     echo "сообщение успешно отправлено";
-					header("Location: http://motionlight.io/");
+					header("Location: https://motionlight.io/thankyou.html");
 					} else {
 						echo "при отправке сообщения возникли ошибки";
 					};

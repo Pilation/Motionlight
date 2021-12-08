@@ -104,7 +104,11 @@ html {
   width: 100%;
 }
 
-.all_btn-b:hover {
+.all_btn-b a {
+  color: #000;
+}
+
+.all_btn-b a:hover {
   color: var(--main-bg-color);
 }
 
